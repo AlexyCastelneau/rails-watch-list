@@ -1,0 +1,9 @@
+<br>
+<div>
+  <%= simple_form_for([@list, @bookmark]) do |f| %>
+    <%= f.input :comment %>
+    <%# lien avec la bd de film à faire -> ?  :collection => ["", ""], :prompt => "Select a category" %>
+    <%= f.association :movie %>
+    <%= f.submit %>
+  <% end %>
+</div>
